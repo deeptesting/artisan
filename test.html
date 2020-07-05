@@ -1,0 +1,514 @@
+
+     <!-- ======= Announcements Section ======= -->
+     <section id="announcements" class="announcements" >
+        <div class="container" data-aos="fade-up">
+  
+            <div class="row">
+              <h2 class="w3-lobster">Announcements</h2>
+              <hr/>
+            </div>
+            <div class="row">
+  
+              <div class="card-deck">
+  
+                <!-- =========Events Card =========-->
+                <div class="card event-card" style="background-color: #fffcde;">
+                  <div class="card-header bg-transparent" style="background-color: #f5f0d3!important;">Events</div>
+                  <div class="card-body">
+                    
+                    <div class="card-text" ng-if="EventsInfo!=null" >
+  
+                      <marquee  height="200" behavior="scroll" direction="up" scrollamount="3" scrolldelay="60" onmouseover="this.stop()" onmouseout="this.start()" >
+                            <div ng-repeat="event in EventsInfo">
+                              <span class="font-weight-bold"> {{event.Date}} </span>
+                              <br/><span class="font-weight-bold">{{event.CESSI_heading}} : </span> {{event.CESSI_text}}
+                              <br/><span class="font-weight-bold">Speaker : </span> {{event.Speaker}}
+                              <br/><span class="font-weight-bold">Venue : </span>{{event.Venue}} 
+                              <br/><span class="font-weight-bold">Time : </span> {{event.Time}} 
+                              <hr/>
+                            </div>
+                      </marquee>
+                    </div>
+                     
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="http://www.cessi.in/events.html">Read more</a> </small>
+                  </div>
+                </div>
+  
+                <!-- =========News Card =========-->
+                <div class="card" style="background-color: #f9ebe7;">
+                  <div class="card-header bg-transparent" style="background-color: #e6c7c7!important;">News</div>
+                  <div class="card-body">
+                   
+                      
+                    <div class="card-text" ng-if="NewsInfo!=null" >
+                      <marquee  height="200" behavior="scroll" direction="up" scrollamount="3" scrolldelay="60" onmouseover="this.stop()" onmouseout="this.start()" >
+                            <div ng-repeat="news in NewsInfo">
+                               <p><a href="{{news.News_Link}}"> {{news.News_text}}</a> </p> 
+                              <hr/>
+                            </div>
+                      </marquee>
+                    </div>
+  
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="http://www.cessi.in/news.html">Read more</a> </small>
+                  </div>
+                </div>
+  
+                <!-- =========Announcements Card =========-->
+                <div class="card" style="background-color: #fffcde;">
+                  <div class="card-header bg-transparent " style="background-color: #f5f0d3!important;">Announcements</div>
+                  <div class="card-body">
+  
+                    <div class="card-text" ng-if="AnnouncementsInfo!=null" >
+                      <marquee  height="200" behavior="scroll" direction="up" scrollamount="3" scrolldelay="60" onmouseover="this.stop()" onmouseout="this.start()" >
+                            <div ng-repeat="announce in AnnouncementsInfo">
+                               <p><a href="{{announce.Link}}"> {{announce.Text}}</a> </p> 
+                              <hr/>
+                            </div>
+                      </marquee>
+                    </div>
+                    
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="#">&nbsp;</a> </small>
+                  </div>
+                </div>
+  
+              </div>
+  
+            </div>
+         
+        </div>
+      </section><!-- End Announcements Section -->
+  
+  
+  
+  
+  
+  <!-- ======= Research Section ======= -->
+  <section id="research" class="research">
+    <div class="container" data-aos="fade-up">
+  
+        <div class="row">
+          <h2 class="w3-lobster">Research</h2>
+          <hr/>
+        </div>
+  
+      <!--  ----Research 1 Start----- -->
+      <div class="row mb-1 ml-1"> <h3>Computational Modelling</h3></div>
+        <div class="row mb-5">
+          
+          <div class="col-md-4 mt-4">
+            <img src="content/images/research/meridional.jpeg" class="img-rounded img-thumbnail" alt="Computational Modelling">
+          </div>
+          
+          <div class="col-md-8 mt-3">
+            
+            <p>The periodic variation of the Sun's large-scale magnetic field is a well-observed phenomenon. The complex interplay between the plasma flows and magnetic fields in the solar interior results in this periodic modulation of the global magnetic field activity of the Sun. The magnetohydrodynamic dynamo theory is able to provide better insight into the fundamental physical processes causing this variational nature of the solar activity.</p>
+            <p>Dibyendu Nandi from IISER Kolkata along with his PhD students has been involved in developing numerical models to study the effects of plasma flows on the evolution of magnetic field deep within the solar convection zone and on the solar surface. The adjacent figure (obtained from the developed dynamo model) depicts the plasma flow profile inside the solar convection zone.</p>
+          </div>
+           
+        </div>
+      <!--  ----Research 1 End----- -->
+  
+  
+  
+       <!--  ----Research 2 Start----- -->
+       <div class="row mb-1 ml-1 mb-4"><h3>Gravitational Waves</h3></div>
+       <div class="row mb-5">
+        
+        <div class="col-md-8">
+          
+          <p>Gravitational waves are one of the several predictions of Einstein’s General Theory of Relativity. Just as Maxwell’s theory of electromagnetism leads to the conclusion that light is a wave, Einstein’s theory tells us that spacetime itself can show the same behavior. These ‘ripples’ in spacetime can give us new insights in understanding phenomena in the universe where gravity is extremely strong, like the collapse of massive stars, rapidly spinning black holes, and mergers of binary black holes and pulsars. With the detection of gravitational waves by LIGO, we have in our hands a new way of exploring the mysteries of the universe.</p>
+          <p>At CESSI, Rajesh Kumble Nayak works mainly on gravitational wave data analysis, where he uses statistical techniques to extract and analyze the signals detected by instruments like LIGO.</p>
+        </div>
+         
+        <div class="col-md-4 mt-1">
+          <img src="content/images/research/gravitational.png" class="img-rounded img-thumbnail" alt="Computational Modelling">
+        </div>
+        
+      </div>
+    <!--  ----Research 2 End----- -->
+  
+  
+   <!--  ----Research 3 Start----- -->
+   <div class="row mb-1 ml-1"> <h3>Helioseismology</h3></div>
+   <div class="row mb-5">
+    <div class="col-md-4  mt-4">
+      <img src="content/images/research/himo.jpg?v=1.5" class="img-rounded img-thumbnail" alt="Computational Modelling">
+    </div>
+     
+    <div class="col-md-8 mt-3">
+      
+      <p>Helioseismology is a tool to probe the solar interior using solar oscillations. These oscillations are due to seismic waves, generated by the turbulent convection of the solar interior. Information about the solar interior helps us to refine the existing theories of stellar structure and evolution developed using the global properties like radius, luminosity, mass, composition and age. It helps in studying the flows in the solar interior and hence gives better insight on solar magnetism.</p>
+      <p>In CESSI, our focus is on helioseismology of magnetic fields and large­scale flows in the solar interior. We mainly work on local helioseismology, which uses local propagation of waves to measure the properties of a relatively small area of the solar interior. We use techniques like time- distance seismology and ring diagram analysis for our work.</p>
+    </div>
+     
+  </div>
+  <!--  ----Research 3 End----- -->
+  
+       <!--  ----Research 4 Start----- -->
+       <div class="row mb-1 ml-1  mb-4"><h3>Instrumentation</h3></div>
+       <div class="row mb-5">
+        
+        <div class="col-md-8">
+         
+          <p>CESSI, being committed towards the development of a scientific workforce in all areas of Space Sciences, puts significant effort into developing state-of-the-art instruments for both space and ground borne observatories. One of our current projects in instrumentation involves the development of a payload, the SUIT ( Solar UltraViolet Imaging Telescope ) on­board the Aditya-­L1 mission. Aditya­L1 is India's first venture towords studying the Sun with a satellite. Besides being an engineering marvel, it also boasts of being the first mission aimed at studying the chromosphere. Aditya has seven payloads in total – the primary being a coronograph (VELC), an imaging telescope (SUIT), accompanied by a magnetometer, two X-ray spectrometers (SoLEX and HEL1OS) and two particle detectors (ASPEX which includes the SWISS,STEPS­1 and PAPA). Aditya is scheduled for launch in 2019-­2020.</p>
+          <p>The SUIT payload is being developed under the leadership of Professor A N Ramaprakash (Instrument Principal Investigator and payload manager) and Professor Durgesh Tripathi (Principal Investigator) at IUCAA, Pune. Professor Dibyendu Nandi leads the science team of one of the science goals of the SUIT instrument. Current work on the instrument includes optical designing, component selection and performance modelling - on which CESSI personnel deployed at various national research centres are working. For more information on Aditya, visit - 
+           <a href="http://www.isro.gov.in/aditya-l1-first-indian-mission-to-study-sun" target="_blank"> http://www.isro.gov.in/aditya-l1-first-indian-mission-to-study-sun</a> .</p>
+        </div>
+         
+        <div class="col-md-4 mt-1">
+          <img src="content/images/research/aditya.jpg" class="img-rounded img-thumbnail" alt="Computational Modelling">
+        </div>
+        
+      </div>
+    <!--  ----Research 4 End----- -->
+  
+   <!--  ----Research 5 Start----- -->
+   <div class="row mb-1 ml-1"> <h3>Space Weather</h3></div>
+   <div class="row mb-5">
+   
+    <div class="col-md-4 mt-4">
+      <img src="content/images/research/spaceweather.jpg" class="img-rounded img-thumbnail" alt="Computational Modelling">
+    </div>
+     
+    <div class="col-md-8 mt-3">
+      
+      <p>The conditions of the immediate space surrounding Earth ( thermosphere, ionosphere, magnetosphere and the interplanetary space between Earth and Sun ) is modulated by the magnetic activity of the Sun. A space weather event is typically associated with the Sun ejecting huge amounts of magnetized plasma and energetic particles into space. Such events despite creating beautiful auroras, pose a threat to telecommunications systems, satellites and power grids among other undesirable effects.</p>
+      <p>We at CESSI direct our efforts towards both predicting and analysing the impact of space weather events through numerical simulations and multi-spacecraft observations. We use numerical models to study the large scale magnetic field of the Solar corona, the dynamics of which is thought to be the main driver of space weather events. Observations from numerous satellites are extensively used to constrain our theoretical models and conduct studies on the dependence of CME properties on their sources on the solar surface, the effect of CMEs on the thermosphere and ionosphere with the goal of assessing the pathways through which space weather effects are mediated.</p>
+    </div>
+     
+  </div>
+  <!--  ----Research 5 End----- -->
+  
+     
+    </div>
+  </section><!-- End research Section -->
+  
+  
+  
+  
+  
+       <!-- ======= Publications Section ======= -->
+       <section id="publications" class="publications" >
+        <div class="container" data-aos="fade-up">
+  
+            <div class="row">
+              <h2 class="w3-lobster">Publications</h2>
+              <hr/>
+            </div>
+            <div class="row justify-content-center">
+  
+               <p>
+                 <a class="btn rounded-pill publication_btn mt-5 mb-5 mr-5 ml-5 pt-5 pb-5 pr-5 pl-5 w-80" href="#publication_pdf" data-lity>
+                       <span>Click Here to show the publication</span>
+                  </a>
+                </p>
+  
+            </div>
+         
+        </div>
+  
+        
+  
+      </section><!-- End Publications Section -->
+  
+  
+  
+  
+  
+  <!-- ======= Programs Section ======= -->
+  <section id="programs" class="programs">
+    <div class="container" data-aos="fade-up">
+  
+        <div class="row">
+          <h2 class="w3-lobster">Programs</h2>
+          <hr/>
+        </div>
+        <!-- PHD -->
+        <div class="row justify-content-center mb-3 p-3" style="background-color: #291b1b; border-radius:2rem;">
+            <h3>PHD</h3>
+            <div>
+              <p>The goal of the doctoral program is to train future generations of space scientists who are equipped with the necessary skills to lead national and international endeavours in the astrophysical space sciences. Students interested in pursuing research in space science and allied fields of interest to CESSI can apply for PhD positions. The cornerstone of the program lies in the collaboration that students are expected to develop with faculties associated with CESSI drawn from various Indian academic organizations. Scientists from reputed institutes within India and abroad visit CESSI year round to deliver lectures and explore research collaborations. CESSI cultivates an open academic atmosphere wherein students are encouraged to take advantage of the ensuing interactions to forge scientific collaborations across institutional borders. This cross-institutional exchange of knowledge is expected to leverage the available expertise within the country more effectively towards the advance training of PhD students.
+              </p>
+              <h4>Degree</h4>
+              <p>Students are awarded a doctoral degree on successful completion of all degree requirements (including course-work) and the defense of their doctoral thesis. Nominally, the total PhD period is expected to be around 5 years. Students get a fellowship during the tenure of their PhD program which is determined based on Government norms.
+              </p>
+              <h4>Requirements</h4>
+              <p>Students with a competitive Masters degree (including MTech) from recognized academic organization are elligible to apply for the PhD program. The minimum eligibility criterion is available here. Note that students are expected to qualify at least one national level examination such as JEST, GATE, CSIR-UGC-NET. Students with INSPIRE fellowship are also encouraged to apply. Students may also apply based on any Government approved scheme for career advancement and mobility of Government personnel.
+              </p>
+              <p>Selections are made after short-listed candidates appear for an interview. Shortlisting of candidates for the interview is based on the documents and other information submitted. The list of documents required shall be declared on the admission portal. Note that mere eligibility does not guarantee being short-listed which is based on several competitive criterion including the statement of interest and letters of recommendation. The final selection is based on the performance in the interview. CESSI selects only the best amongst the applicants who demonstrate strong aptitude and motivation for research in astrophysics and space sciences. When no suitable candidates of sufficient quality are found, no offers are made.
+              </p>
+              <h4>Important Dates</h4>
+              <p>Advertisements for PhD are typically announced once a year on the CESSI web page, depending on the availability of vacancies. This is generally in between the months of February to April
+              </p>
+              <p>Courses shall begin in the last week of July.</p>
+            </div>
+        </div>
+     
+          <!-- MS -->
+        <div class="row justify-content-center mb-3 p-3" style="background-color: #102131;border-radius: 2rem;">
+          <h3>MS</h3>
+          <div>
+            <p> 
+              The program aims to attract highly motivated B.Tech and B.E. students with an engineering background who are desirous of contributing to fundamental research and mission-development in space sciences. The courses in this degree are aimed towards equipping students with the basic knowledge for tackling research problems in astrophysics. On completion of the degree the student would be well-placed to pursue a PhD program in any field of astrophysical space sciences.
+            </p>
+            <h4>Degree</h4>
+            <p>In this two year program the first year involves both coursework and the performance of a research project. The final year is dedicated entirely to the MS Thesis research which typically is a continuation of the first year research project. For their MS Thesis research students can collaborate with a faculty from Department of Physical Sciences at IISER Kolkata or any affiliated CESSI faculty from other organizations.
+            </p>
+            <p>
+              The students are required to complete their course credit requirements and successfully defend their thesis to obtain the MS degree.
+            </p>
+            <h4>
+              Courses
+            </h4>
+            <p>
+              Students are expected to complete all the core courses and choose from a list of elective courses. Core courses typically include Introductory Astrophysics, Computational Physics, Space Astronomy and Fluid- and Magneto-Hydrodynamics or Gravitation and Cosmology. Electives include other courses that are on offer from CESSI and Department of Physical Sciences. The subjects taken by a student is usually chosen in consultation with the concerned student's research supervisor.
+            </p>
+            <h4>Requirements</h4>
+            <p>Students with a competitive 4-year Bachelor's degree in engineering will be considered provided strong background in Physics or Engineering is demonstrated. To consult minimum eligibility criterion please click here.
+            </p>
+            <p>
+              Like our PhD program, selections are only made after shortlisted candidates appear for an interview. Shortlisting of candidates for the interview is based on the documents and other information submitted. The list of documents required shall be declared in the admission portal. Note that satisfying the minimum eligibility criterion is no guarantee for short-listing, which is based on various other factors including statement of interest and recommendation letters. The final selection is based on performance in the interview.
+            </p>
+            <h4>Duration</h4>
+            <p>The Masters program tenure is 2 years. Fellowship will be provided to all selected students.
+            </p>
+            <h4>Important Dates</h4>
+            <p>Advertisement for the MS program is typically announced once a year (during March-April) depending on the availability of funding and seats. You are advised to check the website regularly after March.
+  
+            </p>
+            <p>Courses begin in the last week of July.</p>
+          </div>
+      </div>
+  
+  
+    </div>
+  </section><!-- End Programs Section -->
+  
+  
+  <!-- ======= People Section ======= -->
+  <section id="people" class="people">
+    <div class="container" data-aos="fade-up">
+  
+        <div class="row">
+          <h2 class="w3-lobster">People</h2>
+          <hr/>
+        </div>
+        <!-- People -->
+       
+        <div class="mb-3 full-width-div" >
+   
+           <ng-container ng-if="isPeopleLoad==true && PeopleAllKeysInfo!=null && PeopleInfo!=null">
+            
+            
+            <div class="people_dept_section" ng-repeat="keyPeopleDept in PeopleAllKeysInfo">
+  
+              <div ng-if="keyPeopleDept=='PhD'" class="mt-4" style="text-align: center;">
+               <h2 class="w3-lobster">Students</h2>
+               <hr/>
+              </div>
+  
+  
+              <div class="people_dept_header">
+                <h4 class="w3-lobster">{{keyPeopleDept}}</h4>
+              </div>
+               
+  
+  
+                <div class="card-deck card-columns main-carousel-people" >
+                  <!-- h-100 w-100 mr-3 ml-3  -->
+                  <div class="card m-1 mx-auto {{(keyPeopleDept.toLowerCase()=='alumni'?'card-alumni':'')}} {{(PeopleInfo[keyPeopleDept].length<6)?'card-widther':''}}" ng-repeat="people in PeopleInfo[keyPeopleDept]">
+                    <div class="mx-auto" style="text-align: center;">
+                      <!-- <a href="{{people.External_Link!=''?people.External_Link:'javascript:void(0)'}}" class="mx-auto-custom">
+                        <img class="card-img-top-custom img img-circle rounded-circle" height="105px" width="100px"  src="{{people.Image}}" >                  
+                      </a> -->
+  
+                      <a href="{{people.Image}}" class="mx-auto-custom" data-lity>
+                        <img class="card-img-top-custom img img-circle rounded-circle" height="105px" width="100px"  src="{{people.Image}}" >                  
+                      </a>
+  
+                     
+                      
+                    </div>
+                    <div class="card-body m-1 p-1" style="text-align: center;">
+                      <p class="card-title peaple_name">{{people.Name}}</p>
+                      <p class="card-text" ng-if="people.Degree_Position!=''">{{people.Degree_Position}}</p>
+                      <p class="card-text" ng-if="people.Year!=''">{{people.Year}}</p>
+                      <p class="card-text" ng-if="people.Status!=''">{{people.Status}}</p>
+                      <p class="card-text" ng-if="people.Institute!=''">{{people.Institute}}</p>
+                     
+                        <sapn class="people-link" ng-if="people.External_Link!=''">
+                          <a href="{{people.External_Link}}" target="_blank" style="width:100%;display: inline-block;"> 
+                            Website 
+                            <!-- <img src="/content/images/browser_icon.png" height="25px" width="25px"> -->
+                           </a>
+                        </span>
+                    </div>
+                    <div class="card-footer">
+                      <p class="card-text email-text" ng-if="people.Email!=''">
+                        
+                        <img src="content/images/fa-icon/mail_envelope.png">
+                        
+                        &nbsp;&nbsp; {{people.Email}}&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                  </div>
+                   
+                </div>
+  
+            </div>
+          </ng-container>
+  
+  
+        </div>
+     
+        <a href="content/images/divider2.jpg" data-lity>
+          <img src="content/images/divider2.jpg" width="100%">
+        </a>
+        
+  
+    </div>
+  </section><!-- End People Section -->
+  
+  
+  <!-- ======= Gallery Section ======= -->
+  <section id="gallery" class="gallery">
+    <div class="container" data-aos="fade-up">
+  
+        <div class="row">
+          <h2 class="w3-lobster">Picture Gallery</h2>
+          <hr/>
+        </div>
+        <div class="row">
+              <div class="col-md-6 mb-5">
+                <div class="hovereffect" style="border: 5px solid #6f4a4a;border-radius: 1rem;">
+                    <img class="img-responsive img-thumbnail" height="300px" width="550px" src="content/images/gallery/folio01.jpg" alt="">
+                    <div class="overlay">
+                      <h2>Take a Look</h2>
+                      <a class="info" href="http://www.cessi.in/gallery/cessi.html">Click here</a>
+                    </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 mb-5">
+                <div class="hovereffect" style="border: 5px solid #6f4a4a;border-radius: 1rem;">
+                    <img class="img-responsive img-thumbnail" height="300px" width="550px" src="content/images/gallery/folio02.jpg" alt="">
+                    <div class="overlay">
+                      <h2>Take a Look</h2>
+                      <a class="info" href="http://www.cessi.in/gallery/cedlm.html">Click here</a>
+                    </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 mb-5">
+                <div class="hovereffect" style="border: 5px solid #6f4a4a;border-radius: 1rem;">
+                    <img class="img-responsive img-thumbnail" height="300px" width="550px" src="content/images/gallery/folio03.jpg" alt="">
+                    <div class="overlay">
+                      <h2>Take a Look</h2>
+                      <a class="info" href="http://www.cessi.in/gallery/ssw.html">Click here</a>
+                    </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 mb-5">
+                <div class="hovereffect" style="border: 5px solid #6f4a4a;border-radius: 1rem;">
+                    <img class="img-responsive img-thumbnail" height="300px" width="550px" src="content/images/gallery/folio04.jpg" alt="">
+                    <div class="overlay">
+                      <h2>Take a Look</h2>
+                      <a class="info" href="http://www.cessi.in/gallery/Sougata_Mitra.html">Click here</a>
+                    </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 mb-5">
+                <div class="hovereffect" style="border: 5px solid #6f4a4a;border-radius: 1rem;">
+                    <img class="img-responsive img-thumbnail" height="300px" width="550px" src="content/images/gallery/folio05.jpg" alt="">
+                    <div class="overlay">
+                      <h2>Take a Look</h2>
+                      <a class="info" href="#">Click here</a>
+                    </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 mb-5">
+                <div class="hovereffect" style="border: 5px solid #6f4a4a;border-radius: 1rem;">
+                    <img class="img-responsive img-thumbnail" height="300px" width="550px" src="content/images/gallery/folio06.jpg" alt="">
+                    <div class="overlay">
+                      <h2>Take a Look</h2>
+                      <a class="info" href="http://www.cessi.in/gallery/tmw.html">Click here</a>
+                    </div>
+                </div>
+              </div>
+              
+        </div>
+     
+  
+    </div>
+  </section><!-- End Gallery Section -->
+  
+  
+  
+      <!-- ======= OutReach Section ======= -->
+      <section id="outreach" class="outreach">
+        <div class="container" data-aos="fade-up">
+  
+            <div class="row">
+              <h2 class="w3-lobster">OutReach</h2>
+              <hr/>
+            </div>
+            <div class="">
+              <h4>Public Lectures</h4>
+              <p class="">
+                CESSI organizes public lectures by eminent personalities from the field of science, technology and education to convey the excitement of scientific research and discovery to the public, with a focus on students. Past public lectures are highlighted here.
+              </p>
+              <h4>Public Outreach Events</h4>
+              <p class="">
+                CESSI organizes outreach activities targeting science students and school students with the focus being on astronomy and space sciences. Our outreach activities are highlighted here.   
+              </p>
+              <h4>Promote Science Mission</h4>
+              <p class="">
+                Promote Science is a science outreach mission supported by CESSI which is run by research scholars of IISER Kolkata on a voluntary basis. The main goal of this mission is to enhance scientific awareness in our society and schools regarding career opportunities in diverse scientific disciplines.
+              </p>
+              <h4>CESSI Faculty Advisors for Outreach</h4>
+              <div>
+                <ul>
+                    <li>Dibyendu Nandi</li>
+                    <li>Rajesh Nayak</li>                 
+                </ul>
+  
+              </div>
+             
+              
+              <h4>CESSI Student Volunters:</h4>
+              <div>
+                <ul>
+                    <li>Lekshmi B.</li>
+                    <li>Maitraya Bhattacharyya</li>
+                    <li>Amar Deo Chandra</li>
+                    <li>Soumyaranjan Dash</li>
+                    <li>Rajashik Tarafder</li>
+                    <li>Suvadip Sinha</li>
+                </ul>
+                 
+              </div>
+  
+              <h4>Contact: </h4> 
+              <div>
+                <p>
+                  <img class="mr-3" src="content/images/fa-icon/mail_envelope_brown.png">
+                   <a href="mailto:cessi@iiserkol.ac.in" style="color: #543a04;text-decoration:underline;">cessi@iiserkol.ac.in</a></p>
+  
+                <p>
+                  <img class="mr-3" src="content/images/fa-icon/facebook_brown.png">
+                </i><a href="https://www.facebook.com/promotescience/" target="_blank" style="color: #543a04;text-decoration:underline;">https://www.facebook.com/promotescience/</a></p>
+              </div>
+              
+            </div>
+         
+        </div>
+      </section><!-- End OutReach Section -->
+  
