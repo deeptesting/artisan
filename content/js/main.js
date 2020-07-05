@@ -103,7 +103,14 @@
   var main_nav = $('.nav-menu, #mobile-nav');
 
   $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 125;
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		
+    if(isMobile){
+      var cur_pos = $(this).scrollTop() + 90;
+    }
+    else{
+      var cur_pos = $(this).scrollTop() + 125;
+    }
 
     nav_sections.each(function() {
       var top = $(this).offset().top,
