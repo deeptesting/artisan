@@ -159,13 +159,19 @@
             <h2 class="w3-lobster"><img class="pallate_brush_icon" src="content/images/pallate_icon.png"/> &nbsp;About me </h2><!-- {{screenwidth}}-->
             <hr/>
           </div>
+         
           <div class="row">
-            <p class=" ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <p class=" ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+            <div class="col-md-8">
+              <p class=" ">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <p class=" ">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div>
+           <div class="col-md-4">
+             <img src="content/images/artist.jpg" class="img-thumbnail" style="max-height:450px;width:auto;" />
+           </div>
             
           </div>
           
@@ -240,58 +246,66 @@
             </div>
         </div>  
 
+
+        <div class="margin-top-25">
+          <h2 class="w3-lobster"> &nbsp;Miscellaneous</h2> 
+          
+        </div> 
+
+        <div class="gallery" id="miscellaneous_gallery">
+         
+            <div class="p-4 carowsel-items"  ng-repeat="img in Miscellaneous_Imgs">
+              <a href="content/images/paintings/miscellaneous/{{img.Img_name}}" class="mx-auto-custom" data-lity>
+                <img src="content/images/paintings/miscellaneous/{{img.Img_name}}" style="max-height: 380px; width: auto; " >
+              </a>
+            </div>
+        </div>  
+
+
        
       </div>
     </section><!-- End About Section -->
 
 
-
-
-
   <!-- ======= Contact Us Section ======= -->
+  <section id="services" class="contact">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <h2 class="w3-lobster">Services</h2>
+          <hr/>
+        </div>
+        <div class="row">
+          <p> We provide the following services.. </p><br/>
+        </div>
+        <div class="row">
+          <p>
+            <ul>
+              <li>Portrait</li>
+              <li>Wall painting</li>
+              <li>Mehendi</li>
+              <li>Cloth Designing</li>
+              <li>Birthday Greetings</li>
+              <li>Glass painting</li>
+              <li>Febric</li>
+               
+            </ul>
+          </p>
+        </div>
+        
+
+    </div>
+  </section><!-- End Contact Us Section -->
+
+
+  <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
 
         <div class="row">
           <h2 class="w3-lobster">Contact Us</h2>
-          <hr/>
+          
         </div>
-
-
-
-        <div class="row mt-3 mb-3">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <!-- <h6>Location:</h6> -->
-                <p>Test Address, Test Address, Kolkata <br/> Pin - 741234</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-3">
-            <div class="info">
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <!-- <h4>Email:</h4> -->
-                <p><a href="mailto:test@test.com"> test@test.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <!-- <h4>Call:</h4> -->
-                <p>+91 33 6136 0045</p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
- 
     </div>
   </section><!-- End Contact Us Section -->
 
@@ -307,14 +321,20 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-12 col-md-6">
             <div class="footer-info">
-              <h3>Artisan Payel</h3>
+              <!-- <h2 class="w3-lobster">Artisan Payel</h2> -->
+               
+             
               <p>
-                Test Address, West Bengal, India,<br/> Pin - 741234 <br/><br/>
+                <img src="content/images/round_logo.png" style="max-width: 150px;height: auto;" />
+
+                Test Address, West Bengal, India, Pin - 741234 <br/><br/>
                 <strong>Phone :</strong> +91 33 0000 0000<br/><br/>
                 <strong>Email :</strong> <a href="mailto:test@test.com"> test@test.com</a><br>
               </p>
+              
+            
               <div class="social-links mt-3">
                 <a href="https://twitter.com/test" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.facebook.com/test/" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -353,17 +373,17 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Artisan Payel</span></strong>. All Rights Reserved
-      </div>
+   
        
     </div>
   </footer><!-- End Footer -->
 
 
 
- 
+  <div class="container1" style="background-color: #300025;">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Artisan Payel</span></strong>. All Rights Reserved <br/> &nbsp;
+  </div>
 
 
   <!-- <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a> -->

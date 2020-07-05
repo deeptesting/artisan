@@ -223,10 +223,9 @@ p{
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #8919f1;
+  color: #2e0058;
   text-decoration: underline;
-   
- 
+  font-weight: 800;
 }
 .nav-menu a:hover .brush_icon, .nav-menu .active > a .brush_icon, .nav-menu li:hover > a .brush_icon{
   visibility:visible;
@@ -561,6 +560,14 @@ section p{
  font-family: "Courgette", serif;
  font-size:22px;
 }
+section ul li{
+  font-family: "Courgette", serif;
+  font-size:22px;
+ }
+#footer p {
+  font-family: "Courgette", serif;
+ font-size:22px;
+}
 
 .section-title {
   padding-bottom: 40px;
@@ -625,7 +632,20 @@ section p{
   background-attachment: fixed;
   background-blend-mode: overlay;
 }
-
+#mehendi_gallery{
+  /* background-image: url('../images/background3.jpg');
+  background-size: cover; */
+  background-color: #500038;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+#miscellaneous_gallery{
+  /* background-image: url('../images/background3.jpg');
+  background-size: cover; */
+  background-color: #e4ba83;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
 
 
 
@@ -717,16 +737,16 @@ section p{
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: #39013c;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #151515;
-  border-bottom: 1px solid #222222;
-  padding: 60px 0 30px 0;
+  background: #39013c;
+   
+  padding: 20px 0 20px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -747,7 +767,7 @@ section p{
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 16px;
+   
   line-height: 24px;
   margin-bottom: 0;
   color: #fff;
@@ -756,8 +776,8 @@ section p{
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #292929;
-  color: #fff;
+  background: #fff;
+  color: #2e0058;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -856,9 +876,10 @@ section p{
   background: #bd933f;
 }
 
-#footer .copyright {
+  .copyright {
   text-align: center;
   padding-top: 30px;
+  color:#fff;
 }
 
 #footer .credits {

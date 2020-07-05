@@ -368,9 +368,28 @@ setTimeout(()=>{
 
 
 
- //===============People===================
+ //===============Miscellaneous===================
  
+ 
+ $http({
+  method: 'GET',
+  url: 'content/json/miscellaneous.json?v='+Random()
+}).then(function (response){
+$scope.Miscellaneous_Imgs = response.data;
 
+setTimeout(()=>{
+  $('#miscellaneous_gallery').slick({
+    // dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    centerMode: true,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+ },500)
+
+},function (error){  console.log(error)});
 
 
 
