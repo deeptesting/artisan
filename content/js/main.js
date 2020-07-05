@@ -106,7 +106,7 @@
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 		
     if(isMobile){
-      var cur_pos = $(this).scrollTop() + 90;
+      var cur_pos = $(this).scrollTop() +200;console.log("isMobile",isMobile)
     }
     else{
       var cur_pos = $(this).scrollTop() + 125;
@@ -114,7 +114,7 @@
 
     nav_sections.each(function() {
       var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
+        bottom = top + $(this).outerHeight(); console.log("top",top,"cur_pos",cur_pos)
 
       if (cur_pos >= top && cur_pos <= bottom) {
         if (cur_pos <= bottom) {
