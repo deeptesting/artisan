@@ -344,8 +344,29 @@ setTimeout(()=>{
 
 
 
- //===============Announcements===================
+ //===============Mehendi===================
  
+ $http({
+  method: 'GET',
+  url: 'content/json/mehendi.json?v='+Random()
+}).then(function (response){
+$scope.Mehendi_Imgs = response.data;
+
+setTimeout(()=>{
+  $('#mehendi_gallery').slick({
+    // dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    centerMode: true,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+ },500)
+
+},function (error){  console.log(error)});
+
+
 
  //===============People===================
  

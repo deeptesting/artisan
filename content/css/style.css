@@ -25,7 +25,14 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
-
+hr{
+  background-color: #90348a;
+    height: 2px;
+    display: block;
+    border: 0;
+    clear: both;
+    width: 96%;
+}
 .align-center{
   text-align: center;
 }
@@ -611,6 +618,14 @@ section p{
   /* background-color: #575656; */
   background-attachment: fixed;
 }
+#dress_design_gallery{
+  background-image: url('../images/background3.jpg');
+  background-size: cover;
+  background-color: #dddada;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
 
 
 
