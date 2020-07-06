@@ -16,6 +16,7 @@
     }
   });
 
+  
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -100,13 +101,13 @@
 
   // Navigation active state on scroll
   var nav_sections = $('section');
-  var main_nav = $('.nav-menu, #mobile-nav');
+  var main_nav = $('.nav-menu, .mobile-nav');
 
   $(window).on('scroll', function() {
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 		
     if(isMobile){
-      var cur_pos = $(this).scrollTop() +200;console.log("isMobile",isMobile)
+      var cur_pos = $(this).scrollTop() +125; 
     }
     else{
       var cur_pos = $(this).scrollTop() + 125;
@@ -114,7 +115,7 @@
 
     nav_sections.each(function() {
       var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight(); console.log("top",top,"cur_pos",cur_pos)
+        bottom = top + $(this).outerHeight();  
 
       if (cur_pos >= top && cur_pos <= bottom) {
         if (cur_pos <= bottom) {
