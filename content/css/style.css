@@ -33,6 +33,13 @@ hr{
     clear: both;
     width: 96%;
 }
+a.anchor{
+  color: #90348a;
+  text-decoration: underline;
+}
+a.anchor:hover{
+  color: #8c44ff;
+}
 .align-center{
   text-align: center;
 }
@@ -898,6 +905,23 @@ section ul li{
 
 
 
+.welcometxt{
+  font-size: 54px;
+  padding-top: 49px;
+  color: #862281;
+  text-align: center;
+}
+
+.container p span.highlight{
+  font-weight:bold;
+  color: #862281;
+  font-size:26px;
+}
+.row h3{
+  font-weight:bold;
+  color: #862281;
+  font-size:26px;
+}
 
 
 /**==================================*/
@@ -950,6 +974,9 @@ section ul li{
   }
 }
 @media only screen and (max-width:600px){
+  .welcometxt{
+    font-size:40px;
+  }
   #headingtext,.heading_block{
     display: none!important;
   }
