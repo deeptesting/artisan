@@ -1124,7 +1124,7 @@ section ul li{
 }
 @media only screen and (max-width:600px){
   .flipbook-viewport .container_flipbook {
-    left: 1%; 
+    left: 8%; 
    }
 
   .welcometxt{
