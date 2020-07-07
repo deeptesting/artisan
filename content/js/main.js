@@ -170,9 +170,51 @@
    
   });
 
-  jQuery(document).ready(function() {
+  $(document).ready(function() {
+   setTimeout(()=>{
+    $('#fsModal').modal('toggle');
+   },30)
+    
+    setTimeout(()=>{
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $('#flipbook').turn({
+              width:300,	
+              height:400,
+              elevation: 50,
+              gradients: true,
+              autoCenter: true,
+              display: "single"   
+            });
+       }
+       else{
+            $('#flipbook').turn({
+              width:800,	
+              height:500,
+              elevation: 50,
+              gradients: true,
+              autoCenter: true
+               
+            });
+       }
+     
+  },2)
 
-   
+    $('#btnModalOpen').click(function(){
+     // alert();
+    //  $("#fsModal").modal('show');
+        // if ( $( '#flipbook' ).turn( 'is' ) ) {
+        //        console.log("destroy")
+        //       $( '#flipbook' ).turn( 'destroy' );
+        //       $(window).unbind( 'keydown' );
+        // }
+
+     
+      
+    })
+    $("#fsModal").modal('show');
+
+
+ 
 
     // $('.gallery-00').carousel({ overflow: true, visible: 2, itemMinWidth: 400, itemMargin: 10 });
     // $('.gallery-00').on('initCarousel', function(event, defaults, obj){

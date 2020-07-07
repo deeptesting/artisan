@@ -43,6 +43,7 @@
 
   <script src="content/vendor/jquery.min.js"></script>
   <script src="content/vendor/jquery-ui.min.js"></script>
+ 
 
  <!-- <script src="https://basilio.github.io/responsiveCarousel/js/modernizr-2.5.3.custom.min.js"></script>
  <script src="content/vendor/responsiveCarousel.js"></script> -->
@@ -54,7 +55,8 @@
 
   <script src="content/vendor/bootstrap.min.js"></script>
   <script src="content/vendor/lity/lity.min.js"></script>
- 
+  <script src="content/vendor/turn.min.js"></script>
+
 
 
   <script src="content/vendor/angular.min.js"></script>
@@ -234,16 +236,20 @@
           </div>
          
           <div class="row">
-            <div class="col-md-8">
-              <p class=" ">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            <div class="col-md-8" >
+              <p>
+                Hi, I am Payel Nandi, an artist of oil painting, acrylic painting, water colour, pencil sketch, charcoal, graphite art, portraits etc. 
+                I have created my career as a drawing artist. Thanks for visiting our site of contemporary art and handcraft products. Hope you will enjoy viewing our collections.            
               </p>
-              <p class=" ">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
+                
+               <a id="btnModalOpen" class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal">
+                Check Our Categories
+               </a>
             </div>
+
            <div class="col-md-4">
-             <img src="content/images/artist.jpg" class="img-thumbnail" style="max-height:450px;width:auto;" />
+             <img src="content/images/artist.jpg" class="img-thumbnail" style="max-height:350px;width:auto;" />
            </div>
             
           </div>
@@ -268,7 +274,7 @@
 
         <div class="gallery" id="potrait_gallery">
          
-            <div class="p-4 carowsel-items"  ng-repeat="img in PortraitImgs">
+            <div class="p-4 carowsel-items"  style="min-height: 380px;min-width: 350px;" ng-repeat="img in PortraitImgs">
               <a href="content/images/paintings/portrait/{{img.Img_name}}" class="mx-auto-custom" data-lity>
                 <img src="content/images/paintings/portrait/{{img.Img_name}}" style="max-height: 380px; width: auto; " >
               </a>
@@ -427,11 +433,72 @@
   <div class="container1" style="background-color: #300025;">
     <div class="copyright">
       &copy; Copyright <strong><span>Artisan Payel</span></strong>. All Rights Reserved <br/> &nbsp;
+      </div>
   </div>
 
 
   <!-- <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a> -->
   <!-- <div id="preloader"></div> -->
+
+
+  <!-- modal -->
+  <div id="fsModal" class="modal animated bounceIn modal-fullscreen-xl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  
+      <!-- dialog -->
+      
+          <!-- content -->
+          <div class="modal-content">
+  
+         
+            <div class="modal-header">
+              <h1 id="myModalLabel" class="modal-title"> &nbsp; </h1>
+              <button class="btn btn-secondary" data-dismiss="modal"> close </button>
+          </div>
+          <!-- header -->
+          <!-- body -->
+          <div class="modal-body" style="min-height: 90vh;">
+           
+
+
+            
+
+              <div class="flipbook-viewport">
+                <div class="container_flipbook" >
+                  <div class="flipbook" id="flipbook">
+                    <div style="background-image:url(pages/1.jpg)"></div>
+                    <div style="background-image:url(pages/2.jpg)"></div>
+                    <div style="background-image:url(pages/3.jpg)"></div>
+                    <div style="background-image:url(pages/4.jpg)"></div>
+                    <div style="background-image:url(pages/5.jpg)"></div>
+                    <div style="background-image:url(pages/6.jpg)"></div>
+                    <div style="background-image:url(pages/7.jpg)"></div>
+                    <div style="background-image:url(pages/8.jpg)"></div>
+                    <div style="background-image:url(pages/9.jpg)"></div>
+                    <div style="background-image:url(pages/10.jpg)"></div>
+                    <div style="background-image:url(pages/11.jpg)"></div>
+                    <div style="background-image:url(pages/12.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+          <!-- body -->
+  
+ 
+  
+          </div>
+      <!-- content -->
+   
+  
+  </div>
+  <!-- modal -->
+
+
+
+
+
 
  
   <script>
