@@ -631,34 +631,34 @@ section ul li{
   background-attachment: fixed;
   background-blend-mode: overlay;
 }
-#potrait_gallery{
+#pencilandcharcoalportrait_gallery,#fabricpainting_gallery{
   background-image: url('../images/background1.jpg');
   background-size: cover;
   /* background-color: #575656; */
   background-attachment: fixed;
   /* background-blend-mode: overlay; */
 }
-#wall_Paintings_gallery{
+#acrylicoilportrait_gallery,#colorpainting_gallery{
   background-image: url('../images/background2.jpg');
   background-size: cover;
   /* background-color: #575656; */
   background-attachment: fixed;
 }
-#dress_design_gallery{
+#pencilsketchcharcoal_gallery,#wallpainting_gallery{
   background-image: url('../images/background3.jpg');
   background-size: cover;
   background-color: #dddada;
   background-attachment: fixed;
   background-blend-mode: overlay;
 }
-#mehendi_gallery{
+#colourpencilpainting_gallery,#digitalpainting_gallery{
   /* background-image: url('../images/background3.jpg');
   background-size: cover; */
   background-color: #500038;
   background-attachment: fixed;
   background-blend-mode: overlay;
 }
-#miscellaneous_gallery{
+#illustration_gallery{
   /* background-image: url('../images/background3.jpg');
   background-size: cover; */
   background-color: #e4ba83;

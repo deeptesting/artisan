@@ -327,15 +327,36 @@ app.controller('baseCtrl', function($scope,$http) {
  
    $scope.screenwidth = screen.width ;
    $scope.isPicsLoaded = false;
+
+   $scope.pencilandcharcoalportrait = 16 ;
+   $scope.acrylicoilportrait = 3 ;
+   $scope.pencilsketchcharcoal = 6 ;
+   $scope.colourpencilpainting = 8 ;
+   $scope.colorpainting   = 16;
+   $scope.digitalpainting  = 27 ;
+   $scope.fabricpainting  = 13 ;
+   $scope.illustration  = 6 ;
+   $scope.wallpainting  = 30 ;
+
+
+
+   function GetFilenames(paramname,how_many){
+     var arr = [];
+     for(i=1;i<=how_many;i++){
+       var obj = {};
+       obj.Img_name = paramname+'/'+paramname+i+'.jpg';
+       arr.push(obj);
+     }
+     return JSON.parse(JSON.stringify(arr));
+   }
+
+
   //===============PortraitImgs===================
-  $http({
-      method: 'GET',
-      url: 'content/json/portrait.json?v='+Random()
-  }).then(function (response){
-    $scope.PortraitImgs = response.data;
+  
+    $scope.pencilandcharcoalportrait_Imgs = GetFilenames('pencilandcharcoalportrait',$scope.pencilandcharcoalportrait);
 
      setTimeout(()=>{
-      $('#potrait_gallery').slick({
+      $('#pencilandcharcoalportrait_gallery').slick({
         // dots: true,
         infinite: true,
         slidesToShow: 2,
@@ -346,7 +367,137 @@ app.controller('baseCtrl', function($scope,$http) {
       });
      },500)
 
-  },function (error){  console.log(error)});
+
+
+
+     $scope.acrylicoilportrait_Imgs = GetFilenames('acrylicoilportrait',$scope.acrylicoilportrait);
+
+     setTimeout(()=>{
+      $('#acrylicoilportrait_gallery').slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+     },500)
+
+
+
+
+     $scope.pencilsketchcharcoal_Imgs = GetFilenames('pencilsketchcharcoal',$scope.pencilsketchcharcoal);
+
+     setTimeout(()=>{
+      $('#pencilsketchcharcoal_gallery').slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+     },500)
+
+
+
+     $scope.colourpencilpainting_Imgs = GetFilenames('colourpencilpainting',$scope.colourpencilpainting);
+
+     setTimeout(()=>{
+      $('#colourpencilpainting_gallery').slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+     },500)
+
+
+
+     $scope.colorpainting_Imgs = GetFilenames('colorpainting',$scope.colorpainting);
+
+     setTimeout(()=>{
+      $('#colorpainting_gallery').slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+     },500)
+
+
+
+     $scope.digitalpainting_Imgs = GetFilenames('digitalpainting',$scope.digitalpainting);
+
+     setTimeout(()=>{
+      $('#digitalpainting_gallery').slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+     },500)
+
+
+
+     $scope.fabricpainting_Imgs = GetFilenames('fabricpainting',$scope.fabricpainting);
+
+     setTimeout(()=>{
+      $('#fabricpainting_gallery').slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+     },500)
+
+
+     $scope.illustration_Imgs = GetFilenames('illustration',$scope.illustration);
+
+     setTimeout(()=>{
+      $('#illustration_gallery').slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+     },500)
+
+
+
+     $scope.wallpainting_Imgs = GetFilenames('wallpainting',$scope.wallpainting);
+
+     setTimeout(()=>{
+      $('#wallpainting_gallery').slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+     },500)
+
+
+
 
  
  //===============Wall paintings===================
