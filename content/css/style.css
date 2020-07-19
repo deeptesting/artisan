@@ -357,7 +357,7 @@ p{
 }
 
 .mobile-nav-toggle i {
-  
+  color: #fff;
 }
 
 .mobile-nav {
@@ -1082,7 +1082,7 @@ section ul li{
 .w3-lobster {
   font-family: "Courgette", serif;
   font-weight: 700;
-  font-size:42px;
+  font-size:36px;
   color:#500038;
 }
 .w3-lobster .pallate_brush_icon {
